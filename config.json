@@ -1,0 +1,88 @@
+{
+  "formatVersion": 1.0,
+  "menu": {
+    "Config.access": {
+      "label": "API Access",
+      "formFields": {
+        "access.apiUsername": {
+          "type": "inputText",
+          "required": true,
+          "label": "Username"
+        },
+        "access.apiToken": {
+          "type": "inputText",
+          "required": true,
+          "label": "API token"
+        }
+      }
+    },
+    "Config.sender": {
+      "label": "Sender",
+      "formFields": {
+        "sender.name": {
+          "type": "inputText",
+          "required": true,
+          "label": "Name"
+        },
+        "sender.company": {
+          "type": "inputText",
+          "required": false,
+          "label": "Company"
+        },
+        "sender.address_line_1": {
+          "type": "inputText",
+          "required": true,
+          "label": "Address"
+        },
+        "sender.address_line_2": {
+          "type": "inputText",
+          "required": false,
+          "label": "Address line 2"
+        },
+        "sender.zip_code": {
+          "type": "inputText",
+          "required": true,
+          "label": "Zip code"
+        },
+        "sender.city": {
+          "type": "inputText",
+          "required": true,
+          "label": "City"
+        },
+        "sender.tel": {
+          "type": "inputText",
+          "required": true,
+          "label": "Phone"
+        },
+        "sender.country": {
+          "type": "inputText",
+          "required": true,
+          "label": "Country (iso2)"
+        }
+      }
+    },
+    "Config.env": {
+      "label": "Environment",
+      "formFields": {
+        "env.type": {
+          "type": "selectBox",
+          "required": true,
+          "label": "Type",
+          "options": {
+            "defaultValue": "dev",
+            "selectBoxValues": [
+              {
+                "value": "dev",
+                "caption": "Development"
+              },
+              {
+                "value": "prod",
+                "caption": "Production"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
